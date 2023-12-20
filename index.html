@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden; 
+    margin: 0 auto 10px;
+}
+.profile-picture img {
+    width: 100%; 
+    height: auto; 
+    display: block; /
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #3498db;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.project {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #3498db;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+    <title>BIOGRAFI</title>
+</head>
+<body>
+
+    <header>
+        <div class="profile-picture">
+            <img src="profil.jpg" alt="Your Name">
+        </div>
+        <h1>Muhamad Fiqih</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Sebagai seorang pengembang web penuh-stack, saya memiliki keahlian yang kuat di satu sisi, yaitu di backend.
+         Dengan pemahaman mendalam tentang bahasa pemrograman seperti HTML, CSS, JavaScript,
+         dan juga framework seperti React di sisi klien serta Node.
+         js di sisi server, saya mampu menciptakan solusi yang lengkap dan terintegrasi.</p>
+    </section>
+
+    <section id="education">
+        <h2>Pendidikan</h2>
+        <div class="education-item">
+            <h3>Universitas Pamulang</h3>
+            <p>Program Sarjana Teknik Informatika</p>
+            <p>Tahun: 2021 - 2025</p>
+        </div>
+        <!-- Tambahkan lebih banyak item pendidikan jika diperlukan -->
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Membuat halaman portofolio pribadi yang mencakup bagian beranda, tentang saya, proyek-proyek yang sudah dilakukan, dan informasi kontak.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Membuat halaman landing yang menarik untuk mempromosikan produk atau layanan tertentu. 
+                Halaman ini dapat mencakup header yang menarik, deskripsi produk atau layanan, testimoni pelanggan, dan formulir kontak.</p>
+        </div>
+    </section>
+
+    <section id="explanation">
+        <h2>Penjelasan Cara Kerja Website</h2>
+        <p>Pengguna mengakses alamat website (URL) melalui browser</p>
+        <p>Permintaan diarahkan ke web server melalui internet</p>
+        <p>Web server memproses permintaan dan mengirimkan kembali konten website</p>
+        <p>Browser pengguna menampilkan konten website</p>
+        <h3>Hubungan Web Server, Domain, dan Hosting</h3>
+        <p>Web Server: Tempat menyimpan file & data website</p>
+        <p>Domain: Alamat unik menuju web server</p>
+        <p>Hosting: Penyewaan ruang web server agar website bisa diakses online</p>
+    </section>
+
+    <footer>
+        <p>Contact: faqihfalah0@gmail.com.com</p>
+        <button onclick="toggleExplanation()">Tampilkan Penjelasan</button>
+    </footer>
+
+    <!-- Bootstrap JS dan Popper.js (diperlukan untuk Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleExplanation() {
+            var explanation = document.getElementById("explanation");
+            explanation.style.display = (explanation.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
